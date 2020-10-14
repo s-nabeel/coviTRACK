@@ -37,5 +37,12 @@ for detail in details:
     totals.append(detail.get_text())
 
 print('Summary'.center(28))
-print('Current recovery rate:', round(int(totals[2].strip('\n').replace(',', '')) / int(totals[0].strip('\n').replace(',', '')), 2) * 100, '%')
-print('Current mortality rate:', round(int(totals[1].strip('\n').replace(',', '')) / int(totals[0].strip('\n').replace(',', '')), 2) * 100, '%\n')
+recovery_rate = round(int(totals[2].strip('\n').replace(',', '')) / int(totals[0].strip('\n').replace(',', '')) * 100, 2)
+mortality_rate = round(int(totals[1].strip('\n').replace(',', '')) / int(totals[0].strip('\n').replace(',', '')) * 100, 2)
+print(f'Current recovery rate: {recovery_rate} %')
+print(f'Current mortality rate: {mortality_rate} %\n')
+
+if recovery_rate >= 80:
+    print(f'{user_country.upper()} is doing well based on current statistics!\n')
+elif recovery_rate <= 70:
+    print(f"{user_country.upper()} isn't doing too well based on current statistics.\n")
