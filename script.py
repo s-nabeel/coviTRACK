@@ -23,11 +23,19 @@ page = requests.get(URL)
 soup = BeautifulSoup(page.content, 'html.parser')
 
 headings = ['Coronavirus cases', 'Deaths', 'Recoveries']
-x = 0
+
+heading_index = 0
+totals = []
 
 details = soup.find_all(class_ = 'maincounter-number')
-print(f'\nCoronavirus details for: {user_country}\n')
+print(f'\nCoronavirus details for: {user_country.upper()}\n')
+
 for detail in details:
-    print('', headings[x].center(25))
+    print('', headings[heading_index].center(25))
     print('.........' + detail.get_text() + '.........\n')
-    x += 1
+    heading_index += 1
+    totals.append(detail.get_text())
+
+print('Summary'.center(28))
+print('Current recovery rate:', round(int(totals[2].strip('\n').replace(',', '')) / int(totals[0].strip('\n').replace(',', '')), 2) * 100, '%')
+print('Current mortality rate:', round(int(totals[1].strip('\n').replace(',', '')) / int(totals[0].strip('\n').replace(',', '')), 2) * 100, '%\n')
