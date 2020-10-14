@@ -31,3 +31,4 @@ for detail in details:
     print('', headings[x].center(25))
     print('.........' + detail.get_text() + '.........\n')
     x += 1
+    #print("DONE")
