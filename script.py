@@ -45,4 +45,4 @@ print(f'Current mortality rate: {mortality_rate} %\n')
 if recovery_rate >= 80:
     print(f'{user_country.upper()} is doing well based on current statistics!\n')
 elif recovery_rate <= 79:
-    print(f"{user_country.upper()} isn't doing too well based on current statistics.\n")
+    print(f"{user_country.upper()} isn't doing too well based on current statistics...\n")
