@@ -8,25 +8,25 @@ coviTRACK eliminates the need for digging around, scrolling and seeing pop-up ad
 
 ## Prerequisites
 
-1. [Homebrew](https://brew.sh/)
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-```
-2. [python3](https://www.python.org/)
-```bash
-brew install python
-```
-3. [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+* [Homebrew](https://brew.sh/)
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    ```
+* [python3](https://www.python.org/)
+    ```bash
+    brew install python
+    ```
+* [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
-```bash
-pip3 install beautifulsoup4
-```
+    ```bash
+    pip3 install beautifulsoup4
+    ```
 
-4. [requests](https://pypi.org/project/requests/)
+* [requests](https://pypi.org/project/requests/)
 
-```bash
-pip3 install requests
-```
+    ```bash
+    pip3 install requests
+    ```
 
 ## Installation
 
