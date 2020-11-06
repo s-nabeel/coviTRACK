@@ -28,15 +28,9 @@ coviTRACK eliminates the need for digging around, scrolling and seeing pop-up ad
     pip3 install requests
     ```
 
-## Installation
+## Usage
 
-1. Download [coviTrack](https://github.com/s-nabeel/coviTRACK) to your machine
-2. cd to the download location
-3. Execute below
-
-```bash
-python3 script.py
-```
+1. Enter the country in which you'd like COVID-19 stats for and press Return. That's how simple coviTRACK is!
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
